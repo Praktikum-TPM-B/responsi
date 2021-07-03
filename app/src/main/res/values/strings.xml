@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Covid Jabar</string>
+    <string name="rs_rujukan_covid">RS Rujukan Covid</string>
+    <string name="kasus_covid">Kasus Covid</string>
+</resources>

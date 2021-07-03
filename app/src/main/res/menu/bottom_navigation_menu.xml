@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:title="@string/kasus_covid" />
+
+    <item
+        android:id="@+id/fraskes"
+        android:enabled="true"
+        android:title="@string/rs_rujukan_covid" />
+</menu>
