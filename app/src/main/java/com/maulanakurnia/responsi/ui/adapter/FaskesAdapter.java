@@ -45,7 +45,10 @@ public class FaskesAdapter extends RecyclerView.Adapter<FaskesAdapter.ViewHolder
         holder.tv_title.setText(faskes.get(position).getNama());
         holder.tv_address.setText(faskes.get(position).getAlamat());
         holder.btn_maps.setOnClickListener(v -> {
-            Uri gmmIntentUri = Uri.parse("geo:"+ faskes.get(position).getLatitude() + "," + faskes.get(position).getLongitude());
+            Uri gmmIntentUri = Uri.parse(
+                    "geo:"+ faskes.get(position).getLatitude() +
+                    "," + faskes.get(position).getLongitude() +
+                    "q="+faskes.get(position).getNama());
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
             context.startActivity(mapIntent);
